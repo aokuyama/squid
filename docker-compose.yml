@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    container_name: squid
+    build:
+      context: ./
+    ports:
+      - 3128:3128
+    tty: true
