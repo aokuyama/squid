@@ -6,4 +6,6 @@ services:
       context: ./
     ports:
       - 3128:3128
-    tty: true
+    entrypoint: "/usr/sbin/squid -N"
+    volumes:
+      - ./squid.conf:/etc/squid/squid.conf

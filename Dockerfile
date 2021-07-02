@@ -1,2 +1,3 @@
 FROM alpine
-RUN apk add squid
+RUN apk add --no-cache squid
+
