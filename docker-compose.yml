@@ -5,7 +5,7 @@ services:
     build:
       context: ./
     ports:
-      - 3128:3128
+      - ${SQUID_PORT:-3128}:3128
     entrypoint: "/usr/sbin/squid -N"
     volumes:
       - ./squid.conf:/etc/squid/squid.conf
