@@ -9,3 +9,4 @@ services:
     entrypoint: "/usr/sbin/squid -N"
     volumes:
       - ./squid.conf:/etc/squid/squid.conf
+      - ./auth:/auth
