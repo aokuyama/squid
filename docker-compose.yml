@@ -10,3 +10,4 @@ services:
     volumes:
       - ./squid.conf:/etc/squid/squid.conf
       - ./auth:/auth
+    restart: always
